@@ -1,12 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import router from "./Routes/catRoutes.js";
+import catrouter from "./Routes/catRoutes.js";
+import productrouter from "./Routes/productRoutes.js";
 
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use("/api/cat", router);
+app.use("/api/cat", catrouter);
+app.use("/api/product", productrouter);
 
 app.listen(8081, () => {
   console.log("server is running on port 8081");
