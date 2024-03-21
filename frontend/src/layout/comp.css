@@ -1,0 +1,159 @@
+.navbar{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+.nav-link{
+    font-size: 12px;
+    
+}
+/* .nav-link:hover .dropa{
+    display: block;
+}
+.dropa{
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+    
+}
+.dropaa{
+    text-decoration: none;
+    color: white;
+} */
+
+.nav-item {
+    position: relative; /* Ensure the parent element is positioned relative */
+  }
+  
+  .dropdownres:hover + .dropa,
+  .dropa:hover {
+    display: block; /* Show the dropdown menu when either the parent or dropdown menu is hovered over */
+  }
+  
+  .dropa {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    top: 90%; /* Adjust the top position to position the dropdown below the parent */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #333; /* Adjust background color as needed */
+    z-index: 1; /* Ensure dropdown is above other elements */
+  }
+  
+  .dropa li {
+    padding: 0px 10px; /* Adjust padding as needed */
+  }
+  
+  .dropa li:hover {
+    background-color: #555; /* Adjust background color on hover */
+  }
+  
+  .dropa .dropaa {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* dwnekndjkwjek */
+  .dropdownwed:hover + .dropb,
+  .dropb:hover {
+    display: block; /* Show the dropdown menu when either the parent or dropdown menu is hovered over */
+  }
+  
+  .dropb {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    top: 90%; /* Adjust the top position to position the dropdown below the parent */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #333; /* Adjust background color as needed */
+    z-index: 1; /* Ensure dropdown is above other elements */
+  }
+  
+  .dropb li {
+    padding: 0px 10px; /* Adjust padding as needed */
+  }
+  
+  .dropb li:hover {
+    background-color: #555; /* Adjust background color on hover */
+  }
+  
+  .dropb .dropbb {
+    text-decoration: none;
+    color: white;
+  }
+  /* dwnekndjkwjek */
+  .dropdownabt:hover + .dropc,
+  .dropc:hover {
+    display: block; /* Show the dropdown menu when either the parent or dropdown menu is hovered over */
+  }
+  
+  .dropc {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    top: 90%; /* Adjust the top position to position the dropdown below the parent */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #333; /* Adjust background color as needed */
+    z-index: 1; /* Ensure dropdown is above other elements */
+  }
+  
+  .dropc li {
+    padding: 0px 10px; /* Adjust padding as needed */
+  }
+  
+  .dropc li:hover {
+    background-color: #555; /* Adjust background color on hover */
+  }
+  
+  .dropc .dropcc {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* dwnekndjkwjek */
+  .dropdownser:hover + .dropd,
+  .dropd:hover {
+    display: block; /* Show the dropdown menu when either the parent or dropdown menu is hovered over */
+  }
+  
+  .dropd {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    top: 90%; /* Adjust the top position to position the dropdown below the parent */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #333; /* Adjust background color as needed */
+    z-index: 1; /* Ensure dropdown is above other elements */
+  }
+  
+  .dropd li {
+    padding: 0px 10px; /* Adjust padding as needed */
+  }
+  
+  .dropd li:hover {
+    background-color: #555; /* Adjust background color on hover */
+  }
+  
+  .dropd .dropdd {
+    text-decoration: none;
+    color: white;
+  }
+  

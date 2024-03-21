@@ -3,6 +3,7 @@ import logo from "../images/Logo.jpg";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from "../layout/Navbar";
+import Footertop from "../layout/Footertop";
 
 const Home = () => {
   const images = [
@@ -80,6 +81,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footertop />
     </>
   );
 };
