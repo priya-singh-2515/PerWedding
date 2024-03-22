@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../images/Logo.jpg";
 import "./home.css";
-import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from "../layout/Navbar";
 // import Footertop from "../layout/Footertop";
 import FirstComp from "../slideComp/FirstComp";

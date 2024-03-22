@@ -2,7 +2,7 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const FirstComp = () => {
+const SecondComp = () => {
   const images = [
     {
       original: "./images/HSlide1.jpg",
@@ -66,4 +66,4 @@ const FirstComp = () => {
   );
 };
 
-export default FirstComp;
+export default SecondComp;
