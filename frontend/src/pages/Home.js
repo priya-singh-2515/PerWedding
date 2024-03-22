@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/Logo.jpg";
 import "./home.css";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -7,17 +7,29 @@ import Navbar from "../layout/Navbar";
 import FirstComp from "../slideComp/FirstComp";
 import Footer from "../layout/Footer";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowLeft,
+  faArrowRight,
+  // faL,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const [comp1, setComp1] = useState(true);
+  const [comp2, setComp2] = useState(false);
   const style = {
     backgroundImage: `url("https://i.vimeocdn.com/video/721056442-5d3959de48e444c17d20f83fd86b9d35871458d5c5ba97a722d4c74e99d47143-d?mw=2000&mh=838&q=70")`,
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   };
   const style2 = {
     backgroundImage: `url("https://www.linandjirsa.com/wp-content/uploads/01-wedding-preparation-los-angeles-photo-lin-jirsa.jpg")`,
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     color: "white",
+    height: "100vh",
   };
+
   const image = [
     { img: "./images/feat_logo1.png" },
     { img: "./images/feat_logo2.png" },
@@ -44,6 +56,85 @@ const Home = () => {
       para: "We've curated a list of professionals from Los Angeles and surrounding areas to help bring your wedding dreams to life. Selecting the ideal vendors is crucial for realizing your vision and ensuring your special day goes off without a hitch. Explore our top recommendations and don't hesitate to contact us with any inquiries.",
     },
   ];
+
+  const Comp1 = () => {
+    return (
+      <>
+        <div
+          style={{
+            backgroundImage: `url("/wp-content/uploads/50-joshua-tree-engagement-photography-lin-jirsa-PYE_6151.jpg")`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            color: "white",
+          }}
+        >
+          <h3>Featured Testimonials</h3>
+          <p>
+            “You absolutely killed it, nailed what we had envisioned perfectly.
+            The entire day we got to spend with you and your team, we had so
+            much fun, you made us both feel so comfortable. The final product of
+            our engagement photos came out mind blowing, my fiance was ecstatic,
+            it was so nice to see her so happy with everything. (I was equally
+            happy, but it made it even that much better to see her so happy).”
+          </p>
+          <h3>—Franco, Groom</h3>
+          <FontAwesomeIcon
+            onClick={() => {
+              setComp1(false);
+              setComp2(true);
+            }}
+            icon={faArrowLeft}
+          />
+          <FontAwesomeIcon
+            onClick={() => {
+              setComp1(false);
+              setComp2(true);
+            }}
+            icon={faArrowRight}
+          />
+        </div>
+      </>
+    );
+  };
+
+  const Comp2 = () => {
+    return (
+      <>
+        <div
+          style={{
+            backgroundImage: `url("/wp-content/uploads/50-joshua-tree-engagement-photography-lin-jirsa-PYE_6151.jpg")`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            color: "white",
+          }}
+        >
+          <h3>Featured Testimonials</h3>
+          <p>
+            “I don’t know howwww you got the photos done so fast but THANK YOU I
+            AM OBSESSED! perfection! So grateful”
+          </p>
+          <h3>—Tarjani, Bride</h3>
+          <FontAwesomeIcon
+            onClick={() => {
+              setComp1(true);
+              setComp2(false);
+            }}
+            icon={faArrowLeft}
+          />
+          <FontAwesomeIcon
+            onClick={() => {
+              setComp1(true);
+              setComp2(false);
+            }}
+            icon={faArrowRight}
+          />
+        </div>
+      </>
+    );
+  };
+
+  // export { Comp1, Comp2 };
+
   return (
     <>
       <Navbar />
@@ -161,6 +252,54 @@ const Home = () => {
                 </div>
               </NavLink>
             ))}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12 text-center py-5">
+            <button className="mybtn1">READ MORE PLANNING RESOURCES</button>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ height: "100vh", width: "100%" }}>
+        {comp1 && <Comp1 />}
+        {comp2 && <Comp2 />}
+      </div>
+
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-lg-12">
+            <h3 className="py-5">Los Angeles Wedding Photography</h3>
+            <p className="pb-5">
+              We are Lin & Jirsa, your dedicated Los Angeles wedding
+              photographer team. Rooted in the vibrant heart of Los Angeles,
+              we've embraced its diverse culture and breathtaking scenery.
+              However, to us, 'home' transcends a mere location. It's the
+              indescribable bond we share, a sanctuary of comfort, creativity,
+              and connection. Being part of the journey as couples embark on
+              their most significant adventure, witnessing the intimate moments
+              that define their love, is a privilege we cherish deeply. Our
+              mission is to craft visual narratives that are as genuine and
+              distinct as the love stories they depict.
+            </p>
+            <p className="pb-5">
+              Inspired by Southern California's dynamic landscapes, from the
+              serene beaches to the rugged mountains and the urban sprawl of
+              Downtown LA, we find endless inspiration in our surroundings.
+              Living in Los Angeles offers us a unique opportunity to blend the
+              natural with the urban, creating stunning backdrops for your love
+              story. Photography is more than a service for us—it's preserving
+              the fleeting moments that form the foundation of your memories. We
+              are honored by the thought of capturing your wedding day, crafting
+              the visual legacy of your love.If you're drawn to a passionate
+              team of Los Angeles wedding photographers ready to capture your
+              love against the backdrop of California or anywhere your hearts
+              take you, look no further. We invite you to connect with us, dive
+              into our portfolio, and explore our blog for a glimpse into how we
+              document love stories. In a city teeming with talent, we are
+              grateful you see something special in our work. Let's create
+              something unforgettable together.
+            </p>
           </div>
         </div>
       </div>
