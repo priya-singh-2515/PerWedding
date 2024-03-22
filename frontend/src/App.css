@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* Services WeddingPhotography  Start */
+.sertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sertext h1 {
+  color: #fff;
+  background-color: #888b915b;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+.serimg {
+  width: 100%;
+  height: 85vh;
+}
+.htext h6{
+ text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sertext h1{
+    font-size: 25px;
+  }
+}
+
+@media (max-width:350px) {
+  .sertext h1{
+    font-size: 15px;
+  }
+  .serimg {
+    width: 100%;
+    height: 85vh;
+  }
+}
+/* Services WeddingPhotography  End*/
