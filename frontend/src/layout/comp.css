@@ -174,4 +174,27 @@
   .colmn{
     height: fit-content;
   }
+  .footerul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+  .footerul li {
+    transition: all ease 0.5s;
+  }
+  .footerul li:hover{
+    color: brown;
+    text-decoration: underline;
+
+  }
+  .footerspan{
+    color: #555;
+    font-size: 12px;
+  }
   

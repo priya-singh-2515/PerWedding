@@ -1,0 +1,66 @@
+
+.tophome {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+  .logotext{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 130px;
+    text-wrap: balance;
+  }
+  .featmap{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .brandmash{
+    padding: 0 90px;
+   
+  }
+  .brandmash2{
+    padding: 0 90px;
+   border-right: 1px solid #7a7777;
+  }
+
+  
+
+
+
+  @media (max-width:993px) {
+    
+    .brandmash2{
+      border: none;
+      border-bottom:  1px solid #7a7777;
+    }
+  }
+  @media (max-width:768px) {
+    .logotext{
+      padding: 0 50px;
+    }
+    .brandmash{
+      padding: 0;
+    }
+    .brandmash2{
+      padding: 0;
+    }
+    
+  }
+  @media (max-width: 400px) {
+    .logotext {
+      padding: 0 10px;
+    }
+  }
+  
