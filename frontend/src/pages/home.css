@@ -1,0 +1,42 @@
+
+.tophome {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+  .logotext{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 130px;
+    text-wrap: balance;
+  }
+  .featmap{
+    
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+
+
+
+  @media (max-width:768px) {
+    .logotext{
+      padding: 0 50px;
+    }
+  }
+  @media (max-width: 400px) {
+    .logotext {
+      padding: 0 10px;
+    }
+  }
+  
