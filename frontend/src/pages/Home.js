@@ -65,16 +65,36 @@ const Home = () => {
       </div>
       <div
         style={{ backgroundColor: "#1a1a1a63" }}
-        className="container px-5 py-5 text-center"
+        className="container py-5 text-center"
       >
         <p className="text-light">FEATURED IN:</p>
-        <div className="row px-5 ">
-          <div className="col-sm-12 px-5">
+        <div className="row  ">
+          <div className="col-sm-12">
             <div className="featmap">
               {image.map((e) => (
                 <img src={e.img} />
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 brandmash2 text-center">
+            <h6 style={{ letterSpacing: "2px" }}>
+              TOP 100 WEDDING PHOTOGRAPHERS IN THE US
+            </h6>
+            <p>Brandsmash</p>
+          </div>
+          <div className="col-lg-4 brandmash2 text-center">
+            <h6 style={{ letterSpacing: "2px" }}>LEGENDS OF LIGHT AWARD</h6>
+            <p>Profoto USA</p>
+          </div>
+          <div className="col-lg-4 brandmash text-center">
+            <h6 style={{ letterSpacing: "2px" }}>
+              THE BEST WEDDING PHOTOGRAPHER IN LOS ANGELESs
+            </h6>
+            <p>MyFoxLA</p>
           </div>
         </div>
       </div>

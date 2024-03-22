@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <>
       <Footertop />
-      <div className="container px-5 text-center pt-3 pb-5">
-        <div className="row px-5">
+      <div className="container text-center pt-3 pb-5">
+        <div className="row">
           <span className="footerspan">Copyright 2024</span>
           <span className="footerspan">
             Lin and Jirsa | Los Angeles Wedding Photographer
