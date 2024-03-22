@@ -156,4 +156,22 @@
     text-decoration: none;
     color: white;
   }
+  .footerbg{
+    background-image: url('https://www.linandjirsa.com/wp-content/themes/LJPmain/images/widgetized_back.jpg')
+  }
+  .footerbg p{
+    font-size: 12px;
+  }
+  .footerlink{
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  
+  .footerlink:hover{
+    text-decoration: underline;
+  }
+  .colmn{
+    height: fit-content;
+  }
   

@@ -1,25 +1,13 @@
 import React from "react";
 import logo from "../images/Logo.jpg";
-import ImageGallery from "react-image-gallery";
+
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from "../layout/Navbar";
-import Footertop from "../layout/Footertop";
+// import Footertop from "../layout/Footertop";
+import FirstComp from "../slideComp/FirstComp";
+import Footer from "../layout/Footer";
 
 const Home = () => {
-  const images = [
-    {
-      original: "/images/HSlide9jpg",
-      thumbnail: "/images/HSlide1jpg",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
   return (
     <>
       <Navbar />
@@ -63,25 +51,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-lg-12">
-            <ImageGallery
-              items={images}
-              showPlayButton={true}
-              showFullscreenButton={true}
-              slideInterval={3000}
-              slideOnThumbnailOver={true}
-              showIndex={true}
-              onPlay={() => {
-                alert("slideshow is now playing!");
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <Footertop />
+      <FirstComp />
+      <Footer />
     </>
   );
 };

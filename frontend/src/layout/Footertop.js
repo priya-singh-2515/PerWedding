@@ -1,5 +1,6 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footertop = () => {
   return (
@@ -32,8 +33,8 @@ const Footertop = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className="container px-5">
+      <div className="footerbg text-light">
+        <div className="container  px-5 py-5">
           <div className="row text-center">
             <h3>WEDDING RESOURCES & ADVICE</h3>
             <p>
@@ -48,24 +49,32 @@ const Footertop = () => {
               we can help in any way possible. We have locations in Los Angeles
               and Orange County.
             </p>
-            <div className="col-lg-4 px-5">
-              <div>
-                <h4>HOW TO CHOOSE YOUR PHOTOGRAPHER</h4>
+            <div className="col-md-4 col-sm-12 col-12 ">
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  HOW TO CHOOSE YOUR PHOTOGRAPHER
+                </NavLink>
                 <p>
                   Important Tips and Advice for Choosing The Wedding
                   Photographer for You.
                 </p>
               </div>
-              <div>
-                <h4>QUESTIONS FOR YOUR PHOTOGRAPHER</h4>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  QUESTIONS FOR YOUR PHOTOGRAPHER
+                </NavLink>
                 <p>What Should Your Ask Your Wedding Photographer?</p>
               </div>
-              <div>
-                <h4>4 COMMON EDITING STYLES</h4>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  4 COMMON EDITING STYLES
+                </NavLink>
                 <p>See the most popular wedding photography editing styles!</p>
               </div>
-              <div>
-                <h4>ORANGE COUNTY MATERNITY PHOTOGRAPHER</h4>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  ORANGE COUNTY MATERNITY PHOTOGRAPHER
+                </NavLink>
                 <p>
                   Maternity photography is a beautiful celebration of the female
                   body. Our photographers are ready to capture your precious
@@ -73,8 +82,77 @@ const Footertop = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4"></div>
-            <div className="col-lg-4"></div>
+            <div className="col-md-4 col-sm-12 col-12 ">
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  IDEAL WEDDING PHOTO TIMELINE
+                </NavLink>
+                <p>
+                  Understand Why Wedding Photographers Need the Time We Request.
+                </p>
+              </div>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  WARDROBE AND MAKEUP GUIDE
+                </NavLink>
+                <p>
+                  Wardrobe and Makeup Advice for Your Engagement or Wedding.
+                </p>
+              </div>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  FREQUENTLY ASKED QUESTIONS
+                </NavLink>
+                <p>
+                  A list of the most common questions asked about our studio.
+                </p>
+              </div>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  ORANGE COUNTY NEWBORN PHOTOGRAPHER
+                </NavLink>
+                <p>
+                  Your precious newborn is in good hands with Lin and Jirsa. See
+                  how we apply our passion and creativity to newborn portraits.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 col-sm-12 col-12 ">
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">HIRING “UNCLE JOE”</NavLink>
+                <p>
+                  Understand the Risks of Hiring a Friend or Relative with a
+                  Nice Camera.
+                </p>
+              </div>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  OUR WEDDING PHOTOGRAPHY TOOLBOX
+                </NavLink>
+                <p>
+                  Our cameras, lenses and accessories used for wedding and
+                  engagement photography.
+                </p>
+              </div>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  INDIAN WEDDING PHOTOGRAPHY
+                </NavLink>
+                <p>
+                  Learn how we capture the beauty, excitement, color and emotion
+                  of Indian Weddings.
+                </p>
+              </div>
+              <div className="colmn  py-2">
+                <NavLink className="footerlink">
+                  FAVORITE WEDDING VENDORS
+                </NavLink>
+                <p>
+                  Having a good team will make your wedding run smoothly. Here
+                  are our favorite LA and OC wedding vendors.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
