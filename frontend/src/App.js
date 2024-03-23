@@ -9,7 +9,10 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services/weddingphotography" element={<WeddingPhotography/>}/>
+        <Route
+          path="/services/weddingphotography"
+          element={<WeddingPhotography />}
+        />
       </Routes>
     </>
   );

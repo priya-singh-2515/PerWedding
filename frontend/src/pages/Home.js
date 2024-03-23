@@ -3,32 +3,15 @@ import logo from "../images/Logo.jpg";
 import "./home.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from "../layout/Navbar";
-// import Footertop from "../layout/Footertop";
 import FirstComp from "../slideComp/FirstComp";
 import Footer from "../layout/Footer";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowLeft,
-  faArrowRight,
-  // faL,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [comp1, setComp1] = useState(true);
   const [comp2, setComp2] = useState(false);
-  const style = {
-    backgroundImage: `url("https://i.vimeocdn.com/video/721056442-5d3959de48e444c17d20f83fd86b9d35871458d5c5ba97a722d4c74e99d47143-d?mw=2000&mh=838&q=70")`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  };
-  const style2 = {
-    backgroundImage: `url("https://www.linandjirsa.com/wp-content/uploads/01-wedding-preparation-los-angeles-photo-lin-jirsa.jpg")`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    color: "white",
-    height: "100vh",
-  };
 
   const image = [
     { img: "./images/feat_logo1.png" },
@@ -56,42 +39,67 @@ const Home = () => {
       para: "We've curated a list of professionals from Los Angeles and surrounding areas to help bring your wedding dreams to life. Selecting the ideal vendors is crucial for realizing your vision and ensuring your special day goes off without a hitch. Explore our top recommendations and don't hesitate to contact us with any inquiries.",
     },
   ];
+  const style = {
+    backgroundImage: `url("https://i.vimeocdn.com/video/721056442-5d3959de48e444c17d20f83fd86b9d35871458d5c5ba97a722d4c74e99d47143-d?mw=2000&mh=838&q=70")`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
+  const style2 = {
+    backgroundImage: `url("https://www.linandjirsa.com/wp-content/uploads/01-wedding-preparation-los-angeles-photo-lin-jirsa.jpg")`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "white",
+    height: "100vh",
+  };
+
+  const handleLeftArrowClick = () => {
+    setComp1(false);
+    setComp2(true);
+  };
+
+  const handleRightArrowClick = () => {
+    setComp1(true);
+    setComp2(false);
+  };
 
   const Comp1 = () => {
     return (
       <>
-        <div
-          style={{
-            backgroundImage: `url("/wp-content/uploads/50-joshua-tree-engagement-photography-lin-jirsa-PYE_6151.jpg")`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            color: "white",
-          }}
-        >
-          <h3>Featured Testimonials</h3>
-          <p>
-            “You absolutely killed it, nailed what we had envisioned perfectly.
-            The entire day we got to spend with you and your team, we had so
-            much fun, you made us both feel so comfortable. The final product of
-            our engagement photos came out mind blowing, my fiance was ecstatic,
-            it was so nice to see her so happy with everything. (I was equally
-            happy, but it made it even that much better to see her so happy).”
-          </p>
-          <h3>—Franco, Groom</h3>
-          <FontAwesomeIcon
-            onClick={() => {
-              setComp1(false);
-              setComp2(true);
+        <div className="container-fluid">
+          <div
+            className="row pb-5"
+            style={{
+              backgroundImage: `url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFDsq7DyUiSSZu71XlR034_08BMqQWE4UiujMZD0fGaQYbCwY9")`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
             }}
-            icon={faArrowLeft}
-          />
-          <FontAwesomeIcon
-            onClick={() => {
-              setComp1(false);
-              setComp2(true);
-            }}
-            icon={faArrowRight}
-          />
+          >
+            <div className="col-sm-8 comp py-5 text-light">
+              <h3 className="py-5">Featured Testimonials</h3>
+              <p className="py-3">
+                “You absolutely killed it, nailed what we had envisioned
+                perfectly. The entire day we got to spend with you and your
+                team, we had so much fun, you made us both feel so comfortable.
+                The final product of our engagement photos came out
+                mind-blowing, my fiance was ecstatic, it was so nice to see her
+                so happy with everything. (I was equally happy, but it made it
+                even that much better to see her so happy).”
+              </p>
+              <h3>—Franco, Groom</h3>
+              <FontAwesomeIcon
+                onClick={handleLeftArrowClick}
+                icon={faArrowLeft}
+              />{" "}
+              <br />
+              01 / 02
+              <br />
+              <FontAwesomeIcon
+                onClick={handleLeftArrowClick}
+                icon={faArrowRight}
+              />
+            </div>
+            <div className="col-sm-4"></div>
+          </div>
         </div>
       </>
     );
@@ -100,44 +108,44 @@ const Home = () => {
   const Comp2 = () => {
     return (
       <>
-        <div
-          style={{
-            backgroundImage: `url("/wp-content/uploads/50-joshua-tree-engagement-photography-lin-jirsa-PYE_6151.jpg")`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            color: "white",
-          }}
-        >
-          <h3>Featured Testimonials</h3>
-          <p>
-            “I don’t know howwww you got the photos done so fast but THANK YOU I
-            AM OBSESSED! perfection! So grateful”
-          </p>
-          <h3>—Tarjani, Bride</h3>
-          <FontAwesomeIcon
-            onClick={() => {
-              setComp1(true);
-              setComp2(false);
+        <div className="container-fluid">
+          <div
+            className="row pb-5"
+            style={{
+              backgroundImage: `url("https://d8evzn3g25q98.cloudfront.net/40-los-angeles-wedding-photo-palos-verdes-cliff-4-1.jpg")`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
             }}
-            icon={faArrowLeft}
-          />
-          <FontAwesomeIcon
-            onClick={() => {
-              setComp1(true);
-              setComp2(false);
-            }}
-            icon={faArrowRight}
-          />
+          >
+            <div className="col-sm-8 comp py-5 text-light">
+              <h3 className="py-5">Featured Testimonials</h3>
+              <p className="py-3">
+                “I don’t know howwww you got the photos done so fast but THANK
+                YOU I AM OBSESSED! perfection! So grateful”
+              </p>
+              <h3>—Tarjani, Bride</h3>
+              <FontAwesomeIcon
+                onClick={handleRightArrowClick}
+                icon={faArrowLeft}
+              />
+              <br />
+              02 / 02
+              <br />
+              <FontAwesomeIcon
+                onClick={handleRightArrowClick}
+                icon={faArrowRight}
+              />
+            </div>
+            <div className="col-sm-4"></div>
+          </div>
         </div>
       </>
     );
   };
 
-  // export { Comp1, Comp2 };
-
   return (
     <>
-      <Navbar />
+      <Navbar linkColor="white" />
       <div style={style} className="container-fluid tophome py-5">
         <div className="row">
           <div className="col-lg-12">
@@ -261,10 +269,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div style={{ height: "100vh", width: "100%" }}>
-        {comp1 && <Comp1 />}
-        {comp2 && <Comp2 />}
-      </div>
+      {comp1 && <Comp1 />}
+      {comp2 && <Comp2 />}
 
       <div className="container text-center">
         <div className="row">

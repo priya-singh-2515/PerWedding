@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"; // Import the Twitter icon
 import "./comp.css";
 
-const Navbar = () => {
+const Navbar = ({ linkColor }) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
@@ -36,7 +36,7 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link"
                   aria-current="page"
                 >
@@ -45,14 +45,19 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link dropdownser"
                 >
                   SERVICES
                 </NavLink>
                 <ul className="dropd">
                   <li className="py-1">
-                    <NavLink className="dropdd">WEDDING PHOTOGRAPHY</NavLink>
+                    <NavLink
+                      to="/services/weddingphotography"
+                      className="dropdd"
+                    >
+                      WEDDING PHOTOGRAPHY
+                    </NavLink>
                   </li>
                   <li className="py-1">
                     <NavLink className="dropdd">WEDDING CINEMA</NavLink>
@@ -68,7 +73,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link dropdownres"
                   aria-disabled="true"
                 >
@@ -92,7 +97,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link dropdownwed"
                   aria-disabled="true"
                 >
@@ -115,7 +120,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link dropdownabt"
                   aria-disabled="true"
                 >
@@ -141,7 +146,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link"
                   aria-disabled="true"
                 >
@@ -150,7 +155,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link"
                   aria-disabled="true"
                 >
@@ -162,7 +167,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link"
                   aria-disabled="true"
                 >
@@ -174,7 +179,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link"
                   aria-disabled="true"
                 >
@@ -186,7 +191,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  style={{ color: "white" }}
+                  style={{ color: linkColor }}
                   className="nav-link"
                   aria-disabled="true"
                 >

@@ -41,7 +41,7 @@
   }
   .mybtn1{
     border: none;
-    background-color: #3c3b3b;
+    background-color: #696666;
     color: white;
     padding: 10px 30px;
   }
@@ -52,6 +52,9 @@
     color: black;
   }
   
+  .comp{
+    padding: 0 50px;
+  }
 
 
 
@@ -78,6 +81,9 @@
     .map2{
       width: 100%;
       height: 70vh;
+    }
+    .comp{
+      padding: 0;
     }
   }
   @media (max-width: 400px) {
