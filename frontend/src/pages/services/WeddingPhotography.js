@@ -1,12 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 // import Weddingphotography from "../../images/Weddingphotography.jpg";
-=======
-import "react-image-gallery/styles/css/image-gallery.css";
-
-import Weddingphotography from "../../images/Weddingphotography.jpg";
-import SecondComp from "../../slideComp/SecondComp";
->>>>>>> 995776a194f126a7b38e2e9e964706faf8eb0c15
 import FirstComp from "../../slideComp/FirstComp";
 import Navbar from "../../layout/Navbar";
 import { NavLink } from "react-router-dom";
@@ -14,8 +7,9 @@ import mission4 from "../../images/mission4.jpg";
 import mission3 from "../../images/mission3.jpg";
 import mission2 from "../../images/mission2.jpeg";
 import mission1 from "../../images/mission1.jpg";
-import sideimg from "../../images/sideimg1.png";
+
 import Footer from "../../layout/Footer";
+import SideComp from "./sideComp";
 const WeddingPhotography = () => {
   const map1 = [
     {
@@ -499,124 +493,7 @@ const WeddingPhotography = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 text-center">
-            <h4
-              className="py-2"
-              style={{
-                fontFamily: "Arapey, serif",
-                fontWeight: "200",
-                color: "#3b3939",
-                fontSize: "20px",
-              }}
-            >
-              ABOUT US
-            </h4>
-            <img
-              src={mission1}
-              alt="img"
-              className="py-3"
-              style={{ width: "100%" }}
-            />
-            <p>Crisp. Clean. Different.</p>
-            <p
-              style={{
-                fontFamily: "Lato, sans-serif",
-                fontWeight: "200",
-                color: "#696666",
-                fontSize: "12px",
-                wordSpacing: "3px",
-              }}
-              className="py-3"
-            >
-              Since 2008, LJP has been documenting the best moments of life.
-              Experience our passion, professionalism, and creativity on your
-              special wedding day.
-            </p>
-            <button
-              style={{
-                width: "100%",
-                padding: "5px 0",
-                border: "none",
-                backgroundColor: "rgb(154,204,154)",
-                color: "white",
-                fontWeight: "500",
-              }}
-            >
-              REQUEST QUOTE
-            </button>
-            <p
-              style={{
-                fontFamily: "Lato, sans-serif",
-                fontWeight: "200",
-                color: "#696666",
-              }}
-              className="py-4"
-            >
-              EXPLORE VENUES
-            </p>
-            <div>
-              <NavLink className="pagelinks">Los Angeles Venues</NavLink>
-              <br />
-              <NavLink className="pagelinks">Orange County Venues</NavLink>
-              <br />
-              <NavLink className="pagelinks">Riverside Venues</NavLink>
-              <br />
-              <NavLink className="pagelinks">San Diego Venues</NavLink>
-              <br />
-              <NavLink className="pagelinks">San Francisco Venues</NavLink>
-            </div>
-            <div
-              className="text-center my-5"
-              style={{
-                backgroundColor: "rgb(247,236,232)",
-                width: "100%",
-              }}
-            >
-              <img src={sideimg} alt="img" style={{ width: "100%" }} />
-              <h5
-                style={{
-                  fontFamily: "Lato, sans-serif",
-                  fontWeight: "200",
-                  color: "#696666",
-                }}
-                className="py-3"
-              >
-                JOIN OUR NEWSLETTER
-              </h5>
-              <p
-                style={{
-                  fontFamily: "Lato, sans-serif",
-                  fontWeight: "200",
-                  color: "#696666",
-                  fontSize: "13px",
-                }}
-              >
-                Subscribe to our monthly newsletter and instantly receive access
-                to our library of resources, including:
-              </p>
-              <span>- Cultural Wedding Guides</span>
-              <br />
-              <span>- Best Engagement Photo Locations</span>
-              <br />
-              <span>- 12 Essential Wedding Planning Tips</span>
-            </div>
-<<<<<<< HEAD
-=======
-            <SecondComp/>
-            <div>
-            <h4>Storytelling (and Photojournalism)</h4>
-            <p>Storytelling is at the heart of what we do.  Wedding Photojournalism takes awareness of surroundings, knowledge of human tendencies, and patience. Each image captures an emotion, tells a story, or portrays a mood or feeling. That’s why you won’t see us taking random pictures, for example, you stuffing your face with food or staring off into space.</p>
-            <p>We’re always paying close attention to the environment, listening in on conversations and anticipating that smile, laugh, tear, or hug. We have our crop in mind, our lighting set up perfectly, and we’re waiting for that expression.</p>
-            </div>
-            <FirstComp/>
-            <div>
-                <h4>Creativity (and Uniqueness)</h4>
-                <p>Our creative style means that we seek unique perspectives, angles, and approaches to a scene.  Always in search of reflections, silhouettes, foregrounds, perfect symmetry, and juxtapositions, you’ll see our photographers sneaking behind objects, shooting off mirrors, and finding different perspectives.  Whatever it takes to get the shot!  The idea is to turn ordinary into extraordinary through finding the interest of the composition in a scene that the average eye may not notice.</p>
-            </div>
-            <SecondComp/>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-12">
-
->>>>>>> 995776a194f126a7b38e2e9e964706faf8eb0c15
+            <SideComp />
           </div>
         </div>
       </div>
