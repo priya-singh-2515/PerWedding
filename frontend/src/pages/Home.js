@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/Logo.jpg";
 import "./home.css";
-import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from "../layout/Navbar";
 import FirstComp from "../slideComp/FirstComp";
 import Footer from "../layout/Footer";

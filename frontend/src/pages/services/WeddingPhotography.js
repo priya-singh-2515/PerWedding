@@ -1,5 +1,12 @@
 import React from "react";
+<<<<<<< HEAD
 // import Weddingphotography from "../../images/Weddingphotography.jpg";
+=======
+import "react-image-gallery/styles/css/image-gallery.css";
+
+import Weddingphotography from "../../images/Weddingphotography.jpg";
+import SecondComp from "../../slideComp/SecondComp";
+>>>>>>> 995776a194f126a7b38e2e9e964706faf8eb0c15
 import FirstComp from "../../slideComp/FirstComp";
 import Navbar from "../../layout/Navbar";
 import { NavLink } from "react-router-dom";
@@ -592,6 +599,24 @@ const WeddingPhotography = () => {
               <br />
               <span>- 12 Essential Wedding Planning Tips</span>
             </div>
+<<<<<<< HEAD
+=======
+            <SecondComp/>
+            <div>
+            <h4>Storytelling (and Photojournalism)</h4>
+            <p>Storytelling is at the heart of what we do.  Wedding Photojournalism takes awareness of surroundings, knowledge of human tendencies, and patience. Each image captures an emotion, tells a story, or portrays a mood or feeling. That’s why you won’t see us taking random pictures, for example, you stuffing your face with food or staring off into space.</p>
+            <p>We’re always paying close attention to the environment, listening in on conversations and anticipating that smile, laugh, tear, or hug. We have our crop in mind, our lighting set up perfectly, and we’re waiting for that expression.</p>
+            </div>
+            <FirstComp/>
+            <div>
+                <h4>Creativity (and Uniqueness)</h4>
+                <p>Our creative style means that we seek unique perspectives, angles, and approaches to a scene.  Always in search of reflections, silhouettes, foregrounds, perfect symmetry, and juxtapositions, you’ll see our photographers sneaking behind objects, shooting off mirrors, and finding different perspectives.  Whatever it takes to get the shot!  The idea is to turn ordinary into extraordinary through finding the interest of the composition in a scene that the average eye may not notice.</p>
+            </div>
+            <SecondComp/>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12">
+
+>>>>>>> 995776a194f126a7b38e2e9e964706faf8eb0c15
           </div>
         </div>
       </div>
