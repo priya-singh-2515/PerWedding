@@ -7,6 +7,7 @@ import Footer from "../layout/Footer";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Footercontact from "../layout/footercontact";
 
 const Home = () => {
   const [comp1, setComp1] = useState(true);
@@ -308,6 +309,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footercontact />
       <Footer />
     </>
   );

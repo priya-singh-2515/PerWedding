@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../../layout/Navbar";
 import Aboutsidecomp from './Aboutsidecomp';
 import Aboutimg from "../../images/aboutimg.png"
+import Footer from "../../layout/Footer";
+import Footercontact from "../../layout/footercontact";
 
 
 const OurPhotograpgyteam = () => {
@@ -107,6 +109,7 @@ const OurPhotograpgyteam = () => {
               <p>They assist with scheduling, reviewing timelines, and gathering pre-event items such as a Mood Board. The Client Servicing Team is committed to not only making the planning process as smooth as possible but to ensure an end product that is personalized to each and every couple.</p>
               <h5>Our Post Production Process</h5>
               <p>All post-production is done by our in-studio team. Each post-producer has gone through extensive training in order to consistently deliver beautiful images.</p>
+              <p>Every image delivered is post produced with our signature style of post-production. This involves color correction, exposure adjustment, clarity adjustments, tone-mapping, and other corrections. The result is high definition, vibrant, crisp, and clean. Skin tones are accurate and natural, the colors of the scene “pop,” giving the image a beautiful, timeless aesthetic.</p>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 ">
@@ -114,6 +117,8 @@ const OurPhotograpgyteam = () => {
           </div>
         </div>
       </div>
+      <Footercontact/>
+      <Footer/>
     </>
   );
 };

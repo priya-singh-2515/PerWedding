@@ -10,6 +10,7 @@ import mission1 from "../../images/mission1.jpg";
 
 import Footer from "../../layout/Footer";
 import SideComp from "./sideComp";
+import Footercontact from "../../layout/footercontact";
 const WeddingPhotography = () => {
   const map1 = [
     {
@@ -497,6 +498,7 @@ const WeddingPhotography = () => {
           </div>
         </div>
       </div>
+      <Footercontact />
       <Footer />
     </>
   );

@@ -146,6 +146,7 @@ const Navbar = ({ linkColor }) => {
               </li>
               <li className="nav-item">
                 <NavLink
+                  to="/contactus"
                   style={{ color: linkColor }}
                   className="nav-link"
                   aria-disabled="true"
