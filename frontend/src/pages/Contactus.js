@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../layout/Navbar";
 import "./contact.css";
+import Footer from "../layout/Footer";
 
 const Contactus = () => {
   return (
@@ -263,14 +264,41 @@ const Contactus = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-6 col-sm-12"></div>
-              <div className="col-lg-4 col-md-6 col-sm-12"></div>
-              <div className="col-lg-4 col-md-6 col-sm-12"></div>
+            <div className="container p-4">
+              <div className="row">
+                <div className="col-lg-4 col-md-6 col-sm-12 py-4 bg-dark text-light ">
+                  <h5>FROM THE I-5 N:</h5>
+                  <p style={{ fontSize: "18px", fontWeight: "300" }}>
+                    Take exit 101B for Red Hill Ave toward Tustin Turn left onto
+                    Red Hill Ave Turn right onto Warner Ave Destination will be
+                    on the right 1173 Warner Avenue, Tustin, CA 92782
+                  </p>
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-12 py-4 bg-dark text-light">
+                  <h5>FROM THE I-5 S:</h5>
+                  <p style={{ fontSize: "18px", fontWeight: "300" }}>
+                    Merge onto CA-55 S toward Newport Beach Take exit 9 for
+                    Edinger Ave Turn right onto E Edinger Ave Turn right onto
+                    Warner Ave Destination will be on the right 1173 Warner
+                    Avenue, Tustin, CA 92782
+                  </p>
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-12 py-4 bg-dark text-light">
+                  <h5>FROM THE 405:</h5>
+                  <p style={{ fontSize: "18px", fontWeight: "300" }}>
+                    Take exit 9A to merge onto CA-55 N Take exit 8 for Dyer Rd
+                    Turn right onto E Dyer Rd Turn left onto Red Hill Ave Turn
+                    left onto Warner Ave Destination will be on the right 1173
+                    Warner Avenue, Tustin, CA 92782
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

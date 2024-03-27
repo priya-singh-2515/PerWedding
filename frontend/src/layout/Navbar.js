@@ -60,7 +60,9 @@ const Navbar = ({ linkColor }) => {
                     </NavLink>
                   </li>
                   <li className="py-1">
-                    <NavLink className="dropdd">WEDDING CINEMA</NavLink>
+                    <NavLink to="/services/weddingcinema" className="dropdd">
+                      WEDDING CINEMA
+                    </NavLink>
                   </li>
                   <li className="py-1">
                     <NavLink className="dropdd">WALL ART</NavLink>
