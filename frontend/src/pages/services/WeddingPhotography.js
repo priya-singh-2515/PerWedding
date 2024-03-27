@@ -63,6 +63,7 @@ const WeddingPhotography = () => {
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "200",
                 color: "#696666",
+                textAlign: "justify",
               }}
             >
               <NavLink>Lin and Jirsa</NavLink> is critically acclaimed for
@@ -76,6 +77,7 @@ const WeddingPhotography = () => {
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "200",
                 color: "#696666",
+                textAlign: "justify",
               }}
               className="py-3"
             >
@@ -100,6 +102,7 @@ const WeddingPhotography = () => {
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "200",
                 color: "#696666",
+                textAlign: "justify",
               }}
               className="py-3"
             >
@@ -124,6 +127,7 @@ const WeddingPhotography = () => {
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "200",
                 color: "#696666",
+                textAlign: "justify",
               }}
               className="py-4"
             >
@@ -155,6 +159,7 @@ const WeddingPhotography = () => {
                       fontFamily: "Lato, sans-serif",
                       fontWeight: "200",
                       color: "#696666",
+                      textAlign: "justify",
                     }}
                   >
                     Storytelling is at the heart of what we do. Wedding
@@ -165,7 +170,11 @@ const WeddingPhotography = () => {
                     example, you stuffing your face with food or staring off
                     into space.
                   </p>
-                  <p>
+                  <p
+                    style={{
+                      textAlign: "justify",
+                    }}
+                  >
                     We’re always paying close attention to the environment,
                     listening in on conversations and anticipating that smile,
                     laugh, tear, or hug. We have our crop in mind, our lighting
@@ -193,6 +202,7 @@ const WeddingPhotography = () => {
                       fontFamily: "Lato, sans-serif",
                       fontWeight: "200",
                       color: "#696666",
+                      textAlign: "justify",
                     }}
                   >
                     Our creative style means that we seek unique perspectives,
@@ -228,6 +238,7 @@ const WeddingPhotography = () => {
                       fontFamily: "Lato, sans-serif",
                       fontWeight: "200",
                       color: "#696666",
+                      textAlign: "justify",
                     }}
                   >
                     Capturing the beauty of your special day is also one of our
@@ -260,6 +271,7 @@ const WeddingPhotography = () => {
                       fontFamily: "Lato, sans-serif",
                       fontWeight: "200",
                       color: "#696666",
+                      textAlign: "justify",
                     }}
                   >
                     We’ve developed a unique and refined style of photo editing

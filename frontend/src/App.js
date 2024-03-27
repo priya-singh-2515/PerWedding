@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import WeddingPhotography from "./pages/services/WeddingPhotography";
 import Contactus from "./pages/Contactus";
 import WeddingCinema from "./pages/services/WeddingCinema";
+import Wallart from "./pages/services/Wallart";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           element={<WeddingPhotography />}
         />
         <Route path="/services/weddingcinema" element={<WeddingCinema />} />
+        <Route path="/services/wall-art-collections" element={<Wallart />} />
         <Route path="/contactus" element={<Contactus />} />
       </Routes>
     </>

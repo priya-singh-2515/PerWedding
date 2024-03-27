@@ -65,7 +65,12 @@ const Navbar = ({ linkColor }) => {
                     </NavLink>
                   </li>
                   <li className="py-1">
-                    <NavLink className="dropdd">WALL ART</NavLink>
+                    <NavLink
+                      to="/services/wall-art-collections"
+                      className="dropdd"
+                    >
+                      WALL ART
+                    </NavLink>
                   </li>
                   <li className="py-1">
                     <NavLink className="dropdd">ALBUMS</NavLink>
