@@ -46,3 +46,27 @@
         line-height: 30px;
     }
 }
+
+.albumtext{
+    font-weight: 800 ;
+}
+.ptag{
+    width: 100%;
+    text-align: justify;
+}
+.htagg{
+    width: 70%;
+    text-align: justify;
+    margin: 3vw;
+    align-items: center;
+}
+.ptagg{
+    width: 100%;
+    text-align: justify;
+}
+.htag{
+    width: 70%;
+    text-align: justify;
+    margin:  3vw;
+    align-items: center;
+}

@@ -73,7 +73,12 @@ const Navbar = ({ linkColor }) => {
                     </NavLink>
                   </li>
                   <li className="py-1">
-                    <NavLink className="dropdd">ALBUMS</NavLink>
+                    <NavLink
+                      to="/services/albums-flushmount"
+                      className="dropdd"
+                    >
+                      Albums
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -81,6 +86,7 @@ const Navbar = ({ linkColor }) => {
               <li className="nav-item">
                 <NavLink
                   style={{ color: linkColor }}
+                  to="/resources/wedding-timeline"
                   className="nav-link dropdownres"
                   aria-disabled="true"
                 >
@@ -135,7 +141,7 @@ const Navbar = ({ linkColor }) => {
                 </NavLink>
                 <ul className="dropc">
                   <li className="py-1">
-                    <NavLink className="dropcc">OUR PHOTOGRAPHY TEAM</NavLink>
+                    <NavLink  to="/about/OurPhotography-team" className="dropcc">OUR PHOTOGRAPHY TEAM</NavLink>
                   </li>
                   <li className="py-1">
                     <NavLink className="dropcc">OUR PHOTOGRAPHY STYLE</NavLink>
